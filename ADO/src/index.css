@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #588100;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.container{
+  background: #255000;
+  
+  display: flex;
+
+}
+
+
+
+.h{
+    width: 100%;
+    height: 70px;
+    font-size: 48px;
+    font-family: cursive;
+}
+
+.joaoFrango{
+    margin-top: 40px;
+    height: 350px;
+    width: 347;
+    display: flex;
+}
+
+.email > img{
+    height: 40px;
+}
+
+.email{
+    display: flex;
+    gap: 10px;
+}
+
+.email > h3{
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+.phone > img{
+    height: 35px;
+}
+
+.phone{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.phone > h3{
+    font-size: 20px ;
+    margin-top: 5px;
+}
+
+.birthday > h3 {
+    display: flex;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.linkedIn > img{
+    height: 35px;
+}
+
+.linkedIn{
+    display: flex;
+    gap: 10px;
+}
+
+.Github > img{
+    height: 35px;
+}
+
+.Github {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}

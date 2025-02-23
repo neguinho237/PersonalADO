@@ -1,19 +1,34 @@
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #588100;
+    background-color: #255000;
     text-align: center;
     color: white;
     padding: 20px;
+    width: 100%;
 }
 
-.container{
-  background: #255000;
-  
-  display: flex;
-
+main{
+    display: flex;
+    gap: 40px;
 }
 
+.all{
+    border: solid blue;
+}
 
+.C{
+    background: #FF8B;
+    border: solid black;
+}
+
+.Info{
+
+    border-radius: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
 
 .h{
     width: 100%;
@@ -23,14 +38,22 @@ body {
 }
 
 .joaoFrango{
-    margin-top: 40px;
     height: 350px;
     width: 347;
     display: flex;
+    border: solid black;
+}
+
+.email{
+    margin-top: 10px;
+    margin-left: 10px;
+    
+    
 }
 
 .email > img{
     height: 40px;
+
 }
 
 .email{
@@ -50,6 +73,8 @@ body {
 .phone{
     display: flex;
     gap: 10px;
+    margin-left: 50;
+    margin-left: 10px;
     
 }
 
@@ -62,6 +87,8 @@ body {
     display: flex;
     font-size: 20px;
     margin-top: 5px;
+    margin-left: 35%;
+
 }
 
 .linkedIn > img{
@@ -71,6 +98,7 @@ body {
 .linkedIn{
     display: flex;
     gap: 10px;
+    margin-left: 10px;
 }
 
 .Github > img{
@@ -81,4 +109,10 @@ body {
     display: flex;
     gap: 10px;
     margin-top: 5px;
+    margin-left: 10px;
+}
+
+main > .ProfissionalExperiences{
+    background: #000;
+    text-align: end;
 }

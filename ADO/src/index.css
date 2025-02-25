@@ -1,118 +1,162 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #255000;
-    text-align: center;
+    font-family: cursive, Arial, sans-serif;
+    background-color: #083D77;
     color: white;
     padding: 20px;
-    width: 100%;
 }
 
-main{
+header {
+    text-align: center;
+}
+
+main {
     display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
     gap: 40px;
+    margin-top: 30px;
 }
 
-.all{
-    border: solid blue;
+.all {
+    flex: 2 2 600px; /* Flexível, com largura mínima de 300px */
+    max-width: 1800px; /* Largura máxima */
 }
 
-.C{
-    background: #FF8B;
-    border: solid black;
-}
-
-.Info{
-
-    border-radius: 10px;
-    width: 30%;
+.C {
+    background: #F4D35E;
+    border: solid #DA4167;
     display: flex;
     flex-direction: column;
 }
 
-.h{
+
+
+.Info {
+    border-radius: 10px;
+    flex: 1 1 30%; /* Flexível, com largura mínima de 30% */
+    display: flex;
+    flex-direction: column;
+    color: #DA4167;
+    
+}
+
+.h {
     width: 100%;
     height: 70px;
     font-size: 48px;
-    font-family: cursive;
 }
 
-.joaoFrango{
-    height: 350px;
-    width: 347;
+.joaoFrango {
+    height: auto; /* Altura automática para manter a proporção */
+    width: 100%; /* Largura responsiva */
+    max-width: 360,px; /* Largura máxima */
     display: flex;
-    border: solid black;
+    border: solid #DA4167;
 }
 
-.email{
-    margin-top: 10px;
-    margin-left: 10px;
-    
-    
-}
 
-.email > img{
-    height: 40px;
 
-}
-
-.email{
+.email, .phone, .linkedIn, .Github, .birthday {
     display: flex;
-    gap: 10px;
+    margin: 7px ; 
+    
 }
 
-.email > h3{
+.email > img, .phone > img, .linkedIn > img, .Github > img {
+    height: 35px; /* Altura consistente para ícones */
+    margin-right: 10px; /* Espaçamento entre ícone e texto */
+}
+
+.email > h3, .phone > h3, .birthday > h3 {
     font-size: 20px;
-    margin-top: 6px;
 }
 
-.phone > img{
-    height: 35px;
-}
 
-.phone{
-    display: flex;
-    gap: 10px;
-    margin-left: 50;
-    margin-left: 10px;
+
+
+.ProfissionalExperiences{
+    border: solid 5px;
+    color: #DA4167;
+    background-color: #F4D35E;
     
 }
 
-.phone > h3{
-    font-size: 20px ;
-    margin-top: 5px;
+.ProfissionalExperiences > h1{
+    margin: 15px;
 }
 
-.birthday > h3 {
-    display: flex;
+
+
+.Academy, .Conheço {
+    margin: 50px 0; 
+    border: solid 5px;
+    color: #DA4167;
+    background-color: #F4D35E;
+}
+
+.Academy > h1 {
+    margin: 15px;
+}
+
+.languages > h1{
+margin: 15px;
+}
+
+.Idioma > div{
+    margin: 15px;
+}
+
+.textExp, .textAcad, .textExp2, .textExp3, .textAcad2, .textAcad3 {
+    text-align: start;
+    margin-left: 30px; 
+    gap: 15px;
+}
+
+.languages {
+width: 100%;
+background: #F4D35E;;
+border: solid 7px;
+color: #DA4167;
+}
+
+.languages > div {
+    margin-left: 30px;
+}
+
+.languages> h2{
+    text-align: start;
+}
+
+.Idioma{
+    margin: 50px 0;
+    background: #F4D35E;
+    border: solid 5px;
+    color: #DA4167;
+}
+
+.Idioma > div >h3{
+    margin-left: 30px;
     font-size: 20px;
-    margin-top: 5px;
-    margin-left: 35%;
-
 }
 
-.linkedIn > img{
-    height: 35px;
-}
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Coloca os itens em coluna em telas menores */
+    }
 
-.linkedIn{
-    display: flex;
-    gap: 10px;
-    margin-left: 10px;
-}
+    .Info {
+        width: 100%; /* Largura total em telas menores */
+        margin-top: 50px;
+    }
 
-.Github > img{
-    height: 35px;
-}
-
-.Github {
-    display: flex;
-    gap: 10px;
-    margin-top: 5px;
-    margin-left: 10px;
-}
-
-main > .ProfissionalExperiences{
-    background: #000;
-    text-align: end;
+    .all {
+        width: 100%; /* Largura total em telas menores */
+    }
 }
